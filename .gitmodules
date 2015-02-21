@@ -1,0 +1,12 @@
+[submodule "WeightContest/Widgets/DropDown"]
+	path = WeightContest/Widgets/DropDown
+	url = https://github.com/Wakanda/DropDown.git
+[submodule "WeightContest/Widgets/WaGage"]
+	path = WeightContest/Widgets/WaGage
+	url = https://github.com/saadmos/WaGage.git
+[submodule "WeightContest/Widgets/GridView"]
+	path = WeightContest/Widgets/GridView
+	url = https://github.com/vegarringdal/GridView.git
+[submodule "WeightContest/Widgets/ChartJS"]
+	path = WeightContest/Widgets/ChartJS
+	url = https://github.com/welkaddouri/ChartJS.git
