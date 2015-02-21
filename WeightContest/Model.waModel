@@ -1,0 +1,283 @@
+{
+	"toJSON": true,
+	"extraProperties": {
+		"version": "2",
+		"classes": {
+			"Players": {
+				"panelColor": "#B8CCE4",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 25,
+						"Y": 20
+					}
+				}
+			},
+			"Player": {
+				"panelColor": "#4FA997",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 366,
+						"Y": 19
+					}
+				}
+			},
+			"Game": {
+				"panelColor": "#996699",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 34,
+						"Y": 31
+					}
+				}
+			},
+			"Weight": {
+				"panelColor": "#76923C",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 760,
+						"Y": 111
+					}
+				}
+			}
+		},
+		"model": {
+			"scriptMode": "manual",
+			"workspaceLeft": 0,
+			"workspaceTop": 0,
+			"relationCurve": {
+				"run": true,
+				"mode": 1
+			},
+			"lastScriptLocation": {
+				"Weight": {
+					"computed": "Weight/Weight-events.js"
+				},
+				"Player": {
+					"computed": "Player/Player-events.js"
+				}
+			}
+		}
+	},
+	"dataClasses": [
+		{
+			"name": "Game",
+			"className": "Game",
+			"collectionName": "GameCollection",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				},
+				{
+					"name": "startDate",
+					"kind": "storage",
+					"scope": "public",
+					"type": "date",
+					"simpleDate": false
+				},
+				{
+					"name": "players",
+					"kind": "relatedEntities",
+					"matchColumn": "playerCollection",
+					"scope": "public",
+					"type": "PlayerCollection",
+					"reversePath": true,
+					"path": "game"
+				}
+			]
+		},
+		{
+			"name": "Player",
+			"className": "Player",
+			"collectionName": "PlayerCollection",
+			"matchTable": "Player",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				},
+				{
+					"name": "name",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "registrationDate",
+					"kind": "storage",
+					"scope": "public",
+					"type": "date",
+					"simpleDate": false
+				},
+				{
+					"name": "targetWeight",
+					"kind": "storage",
+					"matchColumn": "startWeight",
+					"scope": "public",
+					"type": "number"
+				},
+				{
+					"name": "height",
+					"kind": "storage",
+					"scope": "public",
+					"type": "number"
+				},
+				{
+					"name": "photo",
+					"kind": "storage",
+					"scope": "public",
+					"type": "image"
+				},
+				{
+					"name": "weights",
+					"kind": "relatedEntities",
+					"matchColumn": "weightsCollection",
+					"scope": "public",
+					"type": "WeightCollection",
+					"reversePath": true,
+					"path": "player"
+				},
+				{
+					"name": "game",
+					"kind": "relatedEntity",
+					"scope": "public",
+					"type": "Game",
+					"path": "Game"
+				},
+				{
+					"name": "lastDate",
+					"kind": "calculated",
+					"matchColumn": "lastEntryDate",
+					"scope": "public",
+					"type": "date",
+					"simpleDate": false,
+					"scriptKind": "javascript",
+					"onGet": [
+						{
+							"from": "$mainModel.Player.lastDate.onGet",
+							"userDefined": true
+						}
+					]
+				},
+				{
+					"name": "lastWeight",
+					"kind": "calculated",
+					"scope": "public",
+					"type": "number",
+					"scriptKind": "javascript",
+					"onGet": [
+						{
+							"from": "$mainModel.Player.lastWeight.onGet",
+							"userDefined": true
+						}
+					]
+				},
+				{
+					"name": "lastBMI",
+					"kind": "calculated",
+					"scope": "public",
+					"type": "number",
+					"scriptKind": "javascript",
+					"onGet": [
+						{
+							"from": "$mainModel.Player.lastBMI.onGet",
+							"userDefined": true
+						}
+					]
+				},
+				{
+					"name": "lastProgress",
+					"kind": "calculated",
+					"scope": "public",
+					"type": "number",
+					"scriptKind": "javascript",
+					"onGet": [
+						{
+							"from": "$mainModel.Player.lastProgress.onGet",
+							"userDefined": true
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Weight",
+			"className": "Weight",
+			"collectionName": "WeightCollection",
+			"matchTable": "Weights",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				},
+				{
+					"name": "player",
+					"kind": "relatedEntity",
+					"scope": "public",
+					"type": "Player",
+					"path": "Player"
+				},
+				{
+					"name": "weight",
+					"kind": "storage",
+					"scope": "public",
+					"type": "number"
+				},
+				{
+					"name": "date",
+					"kind": "storage",
+					"scope": "public",
+					"type": "date",
+					"simpleDate": false
+				},
+				{
+					"name": "BMI",
+					"kind": "calculated",
+					"matchColumn": "IMC",
+					"scope": "public",
+					"type": "number",
+					"scriptKind": "javascript"
+				},
+				{
+					"name": "progress",
+					"kind": "calculated",
+					"scope": "public",
+					"type": "number",
+					"scriptKind": "javascript",
+					"onGet": [
+						{
+							"from": "$mainModel.Weight.progress.onGet",
+							"userDefined": true
+						}
+					]
+				}
+			]
+		}
+	]
+}

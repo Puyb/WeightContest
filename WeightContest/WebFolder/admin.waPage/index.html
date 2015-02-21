@@ -1,0 +1,33 @@
+<!DOCTYPE html><html>
+    <head>
+        <title>index</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="generator" content="Wakanda GUIDesigner"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <meta name="WAF.catalog" content="Game,Player,Weight"/>
+        <meta name="WAF.packageJson"/>
+    	<meta name="wakanda-version" content="Dev build 0.179641"/>
+		<meta name="wakanda-build" content="0.179641"/>
+		<meta name="WAF.config.loadCSS" id="waf-interface-css" content="styles/index.css"/>
+		<meta name="WAF.config.loadCSS" id="waf-project-css" content="/application.css"/>
+
+		
+		<meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="game.players" data-lib="WAF" data-id="players" data-dataType="string" data-autoLoad="true" content="players"/>
+		<meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="players.weights" data-lib="WAF" data-id="weights" data-dataType="string" data-autoLoad="true" content="weights"/><meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="Game" data-lib="WAF" data-id="game" data-dataType="string" data-autoLoad="true" content="game"/></head>
+    <body id="waf-body" data-workspace-width="0" data-workspace-orientation="portrait" data-workspace-height="0" data-workspace-device="desktop" data-viewport-width="device-width" data-viewport-minimum-scale="1.0" data-viewport-maximum-scale="1.0" data-viewport-initial-scale="1.0" data-type="document" data-theme="default" data-platform="desktop" data-lib="WAF" data-group="[]" data-entire-model="false" data-apple-meta-tags-status-bar="default" style="bottom:;right:;visibility:hidden;">
+	<div id="dataGrid1" data-type="dataGrid" data-selection-mode="single" data-lib="WAF" data-label-position="top" data-label="Game" data-footer-text="item(s)" data-display-error="true" data-constraint-top="true" data-constraint-left="true" data-column="[{'sourceAttID':'ID','colID':'ID','width':'70','title':'ID','type':'long'},{'sourceAttID':'startDate','colID':'startDate','width':'100','title':'startDate','type':'date'}]" data-binding="game" class="waf-widget waf-dataGrid"></div>
+		<label id="label1" for="dataGrid1" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label waf-label-datagrid">Game</label>
+		<div id="dataGrid2" data-type="dataGrid" data-selection-mode="single" data-lib="WAF" data-label-position="top" data-label="Players" data-footer-text="item(s)" data-display-error="true" data-constraint-top="true" data-constraint-left="true" data-column="[{'sourceAttID':'name','colID':'name','width':'150','title':'name'},{'sourceAttID':'registrationDate','colID':'registrationDate','width':'100','title':'reg.%20date'},{'sourceAttID':'targetWeight','colID':'targetWeight','width':'90','title':'target%20weight'},{'sourceAttID':'height','colID':'height','width':'90','title':'height'}]" data-binding="players" class="waf-widget waf-dataGrid"></div>
+		<label id="label2" for="dataGrid2" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label waf-label-datagrid">Players</label>
+		<div id="dataGrid3" data-type="dataGrid" data-selection-mode="single" data-lib="WAF" data-label-position="top" data-label="Weights" data-footer-text="item(s)" data-display-error="true" data-constraint-top="true" data-constraint-left="true" data-column="[{'sourceAttID':'weight','colID':'weight','width':'90','title':'weight'},{'sourceAttID':'date','colID':'date','width':'100','title':'date'},{'sourceAttID':'BMI','colID':'BMI','width':'90','title':'BMI'},{'sourceAttID':'progress','colID':'progress','width':'90','title':'progress'}]" data-binding="weights" class="waf-widget waf-dataGrid"></div>
+		<label id="label3" for="dataGrid3" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label waf-label-datagrid">Weights</label>
+		<input value="[players.lastWeight]" type="text" tabindex="0" style=" " id="textInput2" data-value="[players.lastWeight]" data-type="TextInput" data-package="TextInput" data-label="lastWeight" data-displayvalue="[players.lastWeight]" data-constraint-top="true" data-constraint-left="true" data-binding-value="players.lastWeight"/>
+		<label id="label4" for="textInput2" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label waf-label-textinput">lastWeight</label>
+		<input value="[players.lastDate]" type="text" tabindex="0" style=" " id="textInput3" data-value="[players.lastDate]" data-type="TextInput" data-package="TextInput" data-label="lastDate" data-displayvalue="[players.lastDate]" data-constraint-top="true" data-constraint-left="true" data-binding-value="players.lastDate"/>
+		<label id="label5" for="textInput3" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label waf-label-textinput">lastDate</label>
+		<input value="[players.lastBMI]" type="text" tabindex="0" style=" " id="textInput4" data-value="[players.lastBMI]" data-type="TextInput" data-package="TextInput" data-label="lastBMI" data-displayvalue="[players.lastBMI]" data-constraint-top="true" data-constraint-left="true" data-binding-value="players.lastBMI"/>
+		<label id="label6" for="textInput4" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label waf-label-textinput">lastBMI</label>
+		<input value="[players.lastProgress]" type="text" tabindex="0" style=" " id="textInput5" data-value="[players.lastProgress]" data-type="TextInput" data-package="TextInput" data-label="lastProgress" data-displayvalue="[players.lastProgress]" data-constraint-top="true" data-constraint-left="true" data-binding-value="players.lastProgress"/>
+		<label id="label7" for="textInput5" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label waf-label-textinput">lastProgress</label>
+		<script type="text/javascript" src="/waLib/WAF/Loader.js"></script>	</body>
+</html>

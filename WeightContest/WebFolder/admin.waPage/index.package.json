@@ -1,0 +1,33 @@
+{
+	"name": "WeightContest/admin.waPage/index.html",
+	"type": "page",
+	"version": "1.0.0",
+	"loadDependencies": [
+		{
+			"id": "Desktop_Core",
+			"version": "1.0.0",
+			"type": "core"
+		},
+		{
+			"id": "Widget/dataGrid",
+			"type": "widget"
+		},
+		{
+			"id": "Widget/label",
+			"type": "widget"
+		},
+		{
+			"package": "default"
+		},
+		{
+			"package": "TextInput"
+		},
+		{
+			"file": "styles/index.css"
+		},
+		{
+			"file": "application.css",
+			"path": "WEBFOLDER"
+		}
+	]
+}
