@@ -10,3 +10,6 @@
 [submodule "WeightContest/Widgets/WaGage"]
 	path = WeightContest/Widgets/WaGage
 	url = https://github.com/Puyb/WaGage.git
+[submodule "WeightContest/Widgets/FlotLine"]
+	path = WeightContest/Widgets/FlotLine
+	url = https://github.com/Puyb/FlotLine.git
