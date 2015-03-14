@@ -1,0 +1,45 @@
+{
+	"name": "WeightContest/me.waComponent",
+	"type": "component",
+	"version": "1.0.0",
+	"webComponent": "me.waComponent/me.js",
+	"loadDependencies": [
+		{
+			"file": "me.html"
+		},
+		{
+			"id": "Widget/label",
+			"type": "widget"
+		},
+		{
+			"package": "default"
+		},
+		{
+			"package": "Container"
+		},
+		{
+			"package": "DropDown"
+		},
+		{
+			"package": "Text"
+		},
+		{
+			"package": "WaGage"
+		},
+		{
+			"package": "FlotLine"
+		},
+		{
+			"package": "TextInput"
+		},
+		{
+			"package": "Button"
+		},
+		{
+			"file": "me.css"
+		},
+		{
+			"file": "me.js"
+		}
+	]
+}

@@ -1,0 +1,30 @@
+{
+	"name": "WeightContest/start.waComponent",
+	"type": "component",
+	"version": "1.0.0",
+	"webComponent": "start.waComponent/start.js",
+	"loadDependencies": [
+		{
+			"id": "Widget/label",
+			"type": "widget"
+		},
+		{
+			"package": "TextInput"
+		},
+		{
+			"package": "Button"
+		},
+		{
+			"package": "Text"
+		},
+		{
+			"file": "start.html"
+		},
+		{
+			"file": "start.css"
+		},
+		{
+			"file": "start.js"
+		}
+	]
+}

@@ -32,6 +32,15 @@
 			"type": "widget"
 		},
 		{
+			"id": "Widget/component",
+			"type": "widget"
+		},
+		{
+			"id": "start.waComponent/start.package.json",
+			"path": "WEBFOLDER",
+			"type": "component"
+		},
+		{
 			"package": "default"
 		},
 		{

@@ -1,0 +1,36 @@
+{
+	"name": "WeightContest/user.waComponent",
+	"type": "component",
+	"version": "1.0.0",
+	"webComponent": "user.waComponent/user.js",
+	"loadDependencies": [
+		{
+			"id": "Widget/label",
+			"type": "widget"
+		},
+		{
+			"package": "Container"
+		},
+		{
+			"package": "TextInput"
+		},
+		{
+			"package": "Text"
+		},
+		{
+			"package": "Image"
+		},
+		{
+			"package": "Button"
+		},
+		{
+			"file": "user.html"
+		},
+		{
+			"file": "user.css"
+		},
+		{
+			"file": "user.js"
+		}
+	]
+}

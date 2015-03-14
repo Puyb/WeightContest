@@ -1,0 +1,10 @@
+{
+	"name": "user",
+	"html": "user.html",
+	"scripts": [
+		"user.js"
+	],
+	"styles": [
+		"user.css"
+	]
+}

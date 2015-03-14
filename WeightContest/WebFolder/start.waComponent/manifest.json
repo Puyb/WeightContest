@@ -1,0 +1,10 @@
+{
+	"name": "start",
+	"html": "start.html",
+	"scripts": [
+		"start.js"
+	],
+	"styles": [
+		"start.css"
+	]
+}

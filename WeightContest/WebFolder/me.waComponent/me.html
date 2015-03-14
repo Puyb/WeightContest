@@ -1,0 +1,53 @@
+<!DOCTYPE html><section data-group="[]">
+    <meta name="generator" content="Wakanda GUIDesigner"/>
+    <meta name="WAF.catalog" content="Player,Weight"/>
+	<meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass"
+    data-source="player.weights" data-lib="WAF" data-initialOrderBy="date"
+    data-id="{id}weights" data-dataType="string" data-autoLoad="true" content="weights"
+    />
+    <meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass"
+    data-source="Player" data-lib="WAF" data-id="{id}player" data-dataType="string"
+    data-autoLoad="true" content="player" />
+    <select style=" " id="{id}dropDown1" data-type="DropDown" data-selectitem="true"
+    data-package="DropDown" data-label="Player" data-items-attributes="value=ID;label=name"
+    data-items="{id}player" data-constraint-top="true" data-constraint-left="true"></select>
+    <label id="{id}label1" for="dropDown1" data-valign="middle" data-type="label"
+    data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true"
+    class="waf-widget waf-label waf-label-dropdown">Player</label>
+    <div style="width: auto; height: auto; white-space: nowrap; box-sizing: border-box; "
+    id="{id}text5" data-value="[player.lastWeight]" data-type="Text" data-package="Text"
+    data-format="###.0 kg" data-constraint-top="true" data-constraint-left="true"
+    data-binding-value="{id}player.lastWeight" class="" data-urltarget="_blank"
+    data-scrollbar="Hidden">[player.lastWeight]</div>
+    <div style="width: auto; height: auto; white-space: nowrap; box-sizing: border-box; "
+    id="{id}text6" data-value="[player.lastBMI]" data-type="Text" data-package="Text"
+    data-label="BMI" data-format="##.#" data-constraint-top="true" data-constraint-right="true"
+    data-constraint-left="false" data-binding-value="{id}player.lastBMI" class=""
+    data-urltarget="_blank" data-scrollbar="Hidden">[player.lastBMI]</div>
+    <label id="{id}label2" for="text6" data-valign="middle"
+    data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true"
+    data-constraint-right="true" data-constraint-left="false" class="waf-widget waf-label waf-label-text">BMI</label>
+    <div style="width: auto; height: auto; white-space: nowrap; box-sizing: border-box; "
+    id="{id}text7" data-value="[player.points]" data-type="Text" data-package="Text"
+    data-format="#,### pts" data-constraint-top="true" data-constraint-left="true"
+    data-binding-value="{id}player.points" class="" data-urltarget="_blank" data-scrollbar="Hidden">[player.points]</div>
+    <div id="{id}dataGrid1" data-type="FlotLine" data-package="FlotLine"
+    data-data-attributes="x=date;y=weight" data-data="{id}weights" data-constraint-top="true"
+    data-constraint-left="true" class="waf-flotLine"></div>
+    <div style=" " id="{id}waGage1" data-type="WaGage" data-title="Progress"
+    data-package="WaGage" data-constraint-top="true" data-constraint-left="true"
+    data-binding-value="{id}player.lastProgress" class=""></div>
+    <input type="text" tabindex="0" style=" " id="{id}textInput1" data-type="TextInput"
+    data-package="TextInput" data-label="My Weight" data-constraint-top="true"
+    data-constraint-left="true" class="form-control" data-inputtype="text"
+    />
+    <button tabindex="0" style=" " id="{id}button1" data-type="Button" data-package="Button"
+    data-constraint-top="true" data-constraint-left="true" class="btn btn-default"
+    data-urltarget="_blank">
+        <span class="btn-text"></span>
+        <span class="btn-text">Submit</span>
+    </button>
+    <label id="{id}label4" for="textInput1" data-valign="middle" data-type="label"
+    data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-right="false"
+    data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-label waf-label-textinput">My Weight</label>
+</section>

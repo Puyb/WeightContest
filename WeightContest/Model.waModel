@@ -1,625 +1,686 @@
+
 {
-	"toJSON": true,
-	"extraProperties": {
-		"version": "2",
-		"classes": {
-			"Players": {
-				"panelColor": "#B8CCE4",
-				"panel": {
-					"isOpen": "true",
-					"pathVisible": true,
-					"position": {
-						"X": 25,
-						"Y": 20
+	"toJSON" : true,
+	"extraProperties" : 
+	{
+		"version" : "2",
+		"classes" : 
+		{
+			"Players" : 
+			{
+				"panelColor" : "#B8CCE4",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 25,
+						"Y" : 20
 					}
 				}
 			},
-			"Player": {
-				"panelColor": "#4FA997",
-				"panel": {
-					"isOpen": "true",
-					"pathVisible": true,
-					"position": {
-						"X": 388,
-						"Y": 353
+			"Player" : 
+			{
+				"panelColor" : "#4FA997",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 388,
+						"Y" : 353
 					}
 				}
 			},
-			"Game": {
-				"panelColor": "#996699",
-				"panel": {
-					"isOpen": "true",
-					"pathVisible": true,
-					"position": {
-						"X": 45,
-						"Y": 580
+			"Weight" : 
+			{
+				"panelColor" : "#76923C",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 771,
+						"Y" : 5
 					}
 				}
 			},
-			"Weight": {
-				"panelColor": "#76923C",
-				"panel": {
-					"isOpen": "true",
-					"pathVisible": true,
-					"position": {
-						"X": 771,
-						"Y": 5
+			"ExcuseVote" : 
+			{
+				"panelColor" : "#fff",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 1288,
+						"Y" : 348
 					}
 				}
 			},
-			"ExcuseVote": {
-				"panelColor": "#fff",
-				"panel": {
-					"isOpen": "true",
-					"pathVisible": true,
-					"position": {
-						"X": 1288,
-						"Y": 348
+			"Point" : 
+			{
+				"panelColor" : "#996699",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 1327,
+						"Y" : 677
 					}
 				}
 			},
-			"Point": {
-				"panelColor": "#996699",
-				"panel": {
-					"isOpen": "true",
-					"pathVisible": true,
-					"position": {
-						"X": 1285,
-						"Y": 673
+			"Achievment" : 
+			{
+				"panelColor" : "#E5B9B7",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 915,
+						"Y" : 950
 					}
 				}
 			},
-			"Achievment": {
-				"panelColor": "#E5B9B7",
-				"panel": {
-					"isOpen": "true",
-					"pathVisible": true,
-					"position": {
-						"X": 915,
-						"Y": 950
+			"Friend" : 
+			{
+				"panelColor" : "#76923C",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 31,
+						"Y" : 717
 					}
 				}
 			}
 		},
-		"model": {
-			"scriptMode": "manual",
-			"workspaceLeft": 0,
-			"workspaceTop": 0,
-			"relationCurve": {
-				"run": true,
-				"mode": 1
+		"model" : 
+		{
+			"scriptMode" : "manual",
+			"workspaceLeft" : 0,
+			"workspaceTop" : 0,
+			"relationCurve" : 
+			{
+				"run" : true,
+				"mode" : 1
 			},
-			"lastScriptLocation": {
-				"Weight": {
-					"computed": "Weight/Weight-events.js",
-					"events": "Weight/Weight-events.js"
+			"lastScriptLocation" : 
+			{
+				"Weight" : 
+				{
+					"computed" : "Weight/Weight-events.js",
+					"events" : "Weight/Weight-events.js"
 				},
-				"Player": {
-					"computed": "Player/Player-events.js",
-					"method": "Player/Player-methods.js"
+				"Player" : 
+				{
+					"computed" : "Player/Player-events.js",
+					"method" : "Player/Player-methods.js"
 				}
 			}
 		}
 	},
-	"dataClasses": [
+	"dataClasses" : 
+	[
 		{
-			"name": "Achievment",
-			"className": "Achievment",
-			"collectionName": "AchievmentCollection",
-			"scope": "public",
-			"attributes": [
+			"name" : "Achievment",
+			"className" : "Achievment",
+			"collectionName" : "AchievmentCollection",
+			"scope" : "public",
+			"attributes" : 
+			[
 				{
-					"name": "ID",
-					"kind": "storage",
-					"scope": "public",
-					"unique": true,
-					"autosequence": true,
-					"type": "long",
-					"primKey": true
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
 				},
 				{
-					"name": "player",
-					"kind": "relatedEntity",
-					"scope": "public",
-					"type": "Player",
-					"path": "Player"
+					"name" : "player",
+					"kind" : "relatedEntity",
+					"scope" : "public",
+					"type" : "Player",
+					"path" : "Player"
 				},
 				{
-					"name": "date",
-					"kind": "storage",
-					"scope": "public",
-					"type": "date",
-					"simpleDate": false
+					"name" : "date",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "date",
+					"simpleDate" : false
 				},
 				{
-					"name": "description",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
-				},
-				{
-					"name": "points",
-					"kind": "relatedEntities",
-					"matchColumn": "pointCollection",
-					"scope": "public",
-					"type": "PointCollection",
-					"reversePath": true,
-					"path": "achievment"
-				}
-			]
-		},
-		{
-			"name": "ExcuseVote",
-			"className": "ExcuseVote",
-			"collectionName": "ExcuseVoteCollection",
-			"matchTable": "ExcusePoll,Poll",
-			"scope": "public",
-			"attributes": [
-				{
-					"name": "ID",
-					"kind": "storage",
-					"scope": "public",
-					"unique": true,
-					"autosequence": true,
-					"type": "long",
-					"primKey": true
-				},
-				{
-					"name": "weight",
-					"kind": "relatedEntity",
-					"scope": "public",
-					"type": "Weight",
-					"path": "Weight"
-				},
-				{
-					"name": "player",
-					"kind": "relatedEntity",
-					"scope": "public",
-					"type": "Player",
-					"path": "Player"
-				},
-				{
-					"name": "verdict",
-					"kind": "storage",
-					"scope": "public",
-					"type": "bool"
-				},
-				{
-					"name": "date",
-					"kind": "storage",
-					"scope": "public",
-					"type": "date",
-					"simpleDate": false
-				}
-			]
-		},
-		{
-			"name": "Game",
-			"className": "Game",
-			"collectionName": "GameCollection",
-			"scope": "public",
-			"attributes": [
-				{
-					"name": "ID",
-					"kind": "storage",
-					"scope": "public",
-					"unique": true,
-					"autosequence": true,
-					"type": "long",
-					"primKey": true
-				},
-				{
-					"name": "startDate",
-					"kind": "storage",
-					"scope": "public",
-					"type": "date",
-					"simpleDate": false
-				},
-				{
-					"name": "players",
-					"kind": "relatedEntities",
-					"matchColumn": "playerCollection",
-					"scope": "public",
-					"type": "PlayerCollection",
-					"reversePath": true,
-					"path": "game"
-				}
-			]
-		},
-		{
-			"name": "Player",
-			"className": "Player",
-			"collectionName": "PlayerCollection",
-			"matchTable": "Player",
-			"scope": "public",
-			"attributes": [
-				{
-					"name": "ID",
-					"kind": "storage",
-					"scope": "public",
-					"unique": true,
-					"autosequence": true,
-					"type": "long",
-					"primKey": true
-				},
-				{
-					"name": "name",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
-				},
-				{
-					"name": "email",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
-				},
-				{
-					"name": "HA1key",
-					"kind": "storage",
-					"matchColumn": "HA1",
-					"scope": "public",
-					"type": "string"
-				},
-				{
-					"name": "password",
-					"kind": "calculated",
-					"scope": "public",
-					"type": "string",
-					"scriptKind": "javascript",
-					"onGet": [
-						{
-							"from": "$mainModel.Player.password.onGet",
-							"userDefined": true
-						}
-					],
-					"onSet": [
-						{
-							"from": "$mainModel.Player.password.onSet",
-							"userDefined": true
-						}
-					]
-				},
-				{
-					"name": "registrationDate",
-					"kind": "storage",
-					"scope": "public",
-					"type": "date",
-					"simpleDate": false
-				},
-				{
-					"name": "targetWeight",
-					"kind": "storage",
-					"matchColumn": "startWeight",
-					"scope": "public",
-					"type": "number"
-				},
-				{
-					"name": "height",
-					"kind": "storage",
-					"scope": "public",
-					"type": "number"
-				},
-				{
-					"name": "photo",
-					"kind": "storage",
-					"scope": "public",
-					"type": "image"
-				},
-				{
-					"name": "weights",
-					"kind": "relatedEntities",
-					"matchColumn": "weightsCollection",
-					"scope": "public",
-					"type": "WeightCollection",
-					"reversePath": true,
-					"path": "player"
-				},
-				{
-					"name": "game",
-					"kind": "relatedEntity",
-					"scope": "public",
-					"type": "Game",
-					"path": "Game"
-				},
-				{
-					"name": "lastDate",
-					"kind": "calculated",
-					"matchColumn": "lastEntryDate",
-					"scope": "public",
-					"type": "date",
-					"simpleDate": false,
-					"scriptKind": "javascript",
-					"onGet": [
-						{
-							"from": "$mainModel.Player.lastDate.onGet",
-							"userDefined": true
-						}
-					]
-				},
-				{
-					"name": "lastWeight",
-					"kind": "calculated",
-					"scope": "public",
-					"type": "number",
-					"scriptKind": "javascript",
-					"onGet": [
-						{
-							"from": "$mainModel.Player.lastWeight.onGet",
-							"userDefined": true
-						}
-					]
-				},
-				{
-					"name": "lastBMI",
-					"kind": "calculated",
-					"scope": "public",
-					"type": "number",
-					"scriptKind": "javascript",
-					"onGet": [
-						{
-							"from": "$mainModel.Player.lastBMI.onGet",
-							"userDefined": true
-						}
-					]
-				},
-				{
-					"name": "lastProgress",
-					"kind": "calculated",
-					"scope": "public",
-					"type": "number",
-					"scriptKind": "javascript",
-					"onGet": [
-						{
-							"from": "$mainModel.Player.lastProgress.onGet",
-							"userDefined": true
-						}
-					]
-				},
-				{
-					"name": "excusePollCollection",
-					"kind": "relatedEntities",
-					"scope": "public",
-					"type": "ExcuseVoteCollection",
-					"reversePath": true,
-					"path": "player"
-				},
-				{
-					"name": "pointCollection",
-					"kind": "relatedEntities",
-					"scope": "public",
-					"type": "PointCollection",
-					"reversePath": true,
-					"path": "player"
-				},
-				{
-					"name": "points",
-					"kind": "calculated",
-					"scope": "public",
-					"type": "number",
-					"scriptKind": "javascript",
-					"onGet": [
-						{
-							"from": "$mainModel.Player.points.onGet",
-							"userDefined": true
-						}
-					]
-				},
-				{
-					"name": "achievmentCollection",
-					"kind": "relatedEntities",
-					"scope": "public",
-					"type": "AchievmentCollection",
-					"reversePath": true,
-					"path": "player"
+					"name" : "description",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				}
 			],
-			"methods": [
+			"key" : 
+			[
 				{
-					"name": "addWeight",
-					"applyTo": "entity",
-					"scope": "publicOnServer",
-					"from": "$mainModel.Player.entityMethods.addWeight",
-					"userDefined": true
-				},
-				{
-					"name": "validatePassword",
-					"applyTo": "entity",
-					"scope": "publicOnServer",
-					"from": "$mainModel.Player.entityMethods.validatePassword",
-					"userDefined": true
+					"name" : "ID"
 				}
 			]
 		},
 		{
-			"name": "Point",
-			"className": "Point",
-			"collectionName": "PointCollection",
-			"scope": "public",
-			"attributes": [
+			"name" : "ExcuseVote",
+			"className" : "ExcuseVote",
+			"collectionName" : "ExcuseVoteCollection",
+			"matchTable" : "ExcusePoll,Poll",
+			"scope" : "public",
+			"attributes" : 
+			[
 				{
-					"name": "ID",
-					"kind": "storage",
-					"scope": "public",
-					"unique": true,
-					"autosequence": true,
-					"type": "long",
-					"primKey": true
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
 				},
 				{
-					"name": "player",
-					"kind": "relatedEntity",
-					"scope": "public",
-					"type": "Player",
-					"path": "Player"
+					"name" : "weight",
+					"kind" : "relatedEntity",
+					"scope" : "public",
+					"type" : "Weight",
+					"path" : "Weight"
 				},
 				{
-					"name": "weight",
-					"kind": "relatedEntity",
-					"scope": "public",
-					"type": "Weight",
-					"path": "Weight"
+					"name" : "player",
+					"kind" : "relatedEntity",
+					"scope" : "public",
+					"type" : "Player",
+					"path" : "Player"
 				},
 				{
-					"name": "description",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "verdict",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "bool"
 				},
 				{
-					"name": "points",
-					"kind": "storage",
-					"scope": "public",
-					"type": "number"
-				},
+					"name" : "date",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "date",
+					"simpleDate" : false
+				}
+			],
+			"key" : 
+			[
 				{
-					"name": "date",
-					"kind": "storage",
-					"scope": "public",
-					"type": "date",
-					"simpleDate": false
-				},
-				{
-					"name": "achievment",
-					"kind": "relatedEntity",
-					"scope": "public",
-					"type": "Achievment",
-					"path": "Achievment"
+					"name" : "ID"
 				}
 			]
 		},
 		{
-			"name": "Weight",
-			"className": "Weight",
-			"collectionName": "WeightCollection",
-			"matchTable": "Weights",
-			"scope": "public",
-			"attributes": [
+			"name" : "Friend",
+			"className" : "Friend",
+			"collectionName" : "FriendCollection",
+			"matchTable" : "Friends",
+			"scope" : "public",
+			"attributes" : 
+			[
 				{
-					"name": "ID",
-					"kind": "storage",
-					"scope": "public",
-					"unique": true,
-					"autosequence": true,
-					"type": "long",
-					"primKey": true
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
 				},
 				{
-					"name": "player",
-					"kind": "relatedEntity",
-					"scope": "public",
-					"type": "Player",
-					"path": "Player"
+					"name" : "player",
+					"kind" : "relatedEntity",
+					"scope" : "public",
+					"type" : "Player",
+					"path" : "Player"
 				},
 				{
-					"name": "weight",
-					"kind": "storage",
-					"scope": "public",
-					"type": "number"
+					"name" : "friend",
+					"kind" : "relatedEntity",
+					"scope" : "public",
+					"type" : "Player",
+					"path" : "Player"
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
+				}
+			]
+		},
+		{
+			"name" : "Player",
+			"className" : "Player",
+			"collectionName" : "PlayerCollection",
+			"matchTable" : "Player",
+			"scope" : "public",
+			"attributes" : 
+			[
+				{
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
 				},
 				{
-					"name": "date",
-					"kind": "storage",
-					"scope": "public",
-					"type": "date",
-					"simpleDate": false,
-					"events": [
+					"name" : "name",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "email",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "HA1key",
+					"kind" : "storage",
+					"matchColumn" : "HA1",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "password",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
 						{
-							"kind": "init",
-							"from": "$mainModel.Weight.date.events.init",
-							"userDefined": true
+							"from" : "$mainModel.Player.password.onGet",
+							"userDefined" : true
+						}
+					],
+					"onSet" : 
+					[
+						{
+							"from" : "$mainModel.Player.password.onSet",
+							"userDefined" : true
 						}
 					]
 				},
 				{
-					"name": "BMI",
-					"kind": "calculated",
-					"matchColumn": "IMC",
-					"scope": "public",
-					"type": "number",
-					"scriptKind": "javascript",
-					"onGet": [
+					"name" : "registrationDate",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "date",
+					"simpleDate" : false
+				},
+				{
+					"name" : "targetWeight",
+					"kind" : "storage",
+					"matchColumn" : "startWeight",
+					"scope" : "public",
+					"type" : "number"
+				},
+				{
+					"name" : "height",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "number"
+				},
+				{
+					"name" : "photo",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "image"
+				},
+				{
+					"name" : "weights",
+					"kind" : "relatedEntities",
+					"matchColumn" : "weightsCollection",
+					"scope" : "public",
+					"type" : "WeightCollection",
+					"reversePath" : true,
+					"path" : "player"
+				},
+				{
+					"name" : "lastDate",
+					"kind" : "calculated",
+					"matchColumn" : "lastEntryDate",
+					"scope" : "public",
+					"type" : "date",
+					"simpleDate" : false,
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
 						{
-							"from": "$mainModel.Weight.BMI.onGet",
-							"userDefined": true
+							"from" : "$mainModel.Player.lastDate.onGet",
+							"userDefined" : true
 						}
 					]
 				},
 				{
-					"name": "progress",
-					"kind": "calculated",
-					"scope": "public",
-					"type": "number",
-					"scriptKind": "javascript",
-					"onGet": [
+					"name" : "lastWeight",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "number",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
 						{
-							"from": "$mainModel.Weight.progress.onGet",
-							"userDefined": true
+							"from" : "$mainModel.Player.lastWeight.onGet",
+							"userDefined" : true
 						}
 					]
 				},
 				{
-					"name": "excuse",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
-				},
-				{
-					"name": "excuseVotes",
-					"kind": "relatedEntities",
-					"matchColumn": "excusePollCollection",
-					"scope": "public",
-					"type": "ExcuseVoteCollection",
-					"reversePath": true,
-					"path": "weight"
-				},
-				{
-					"name": "excuseVerdict",
-					"kind": "calculated",
-					"scope": "public",
-					"type": "bool",
-					"scriptKind": "javascript",
-					"onGet": [
+					"name" : "lastBMI",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "number",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
 						{
-							"from": "$mainModel.Weight.excuseVerdict.onGet",
-							"userDefined": true
+							"from" : "$mainModel.Player.lastBMI.onGet",
+							"userDefined" : true
 						}
 					]
 				},
 				{
-					"name": "endOfExcuseVote",
-					"kind": "calculated",
-					"scope": "public",
-					"type": "date",
-					"simpleDate": false,
-					"scriptKind": "javascript",
-					"onGet": [
+					"name" : "lastProgress",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "number",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
 						{
-							"from": "$mainModel.Weight.endOfExcuseVote.onGet",
-							"userDefined": true
+							"from" : "$mainModel.Player.lastProgress.onGet",
+							"userDefined" : true
 						}
 					]
 				},
 				{
-					"name": "points",
-					"kind": "calculated",
-					"scope": "public",
-					"type": "number",
-					"scriptKind": "javascript",
-					"onGet": [
+					"name" : "points",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "number",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
 						{
-							"from": "$mainModel.Weight.points.onGet",
-							"userDefined": true
+							"from" : "$mainModel.Player.points.onGet",
+							"userDefined" : true
 						}
 					]
 				},
 				{
-					"name": "pointCollection",
-					"kind": "relatedEntities",
-					"scope": "public",
-					"type": "PointCollection",
-					"reversePath": true,
-					"path": "weight"
+					"name" : "achievments",
+					"kind" : "relatedEntities",
+					"matchColumn" : "achievmentCollection",
+					"scope" : "public",
+					"type" : "AchievmentCollection",
+					"reversePath" : true,
+					"path" : "player"
+				},
+				{
+					"name" : "friends",
+					"kind" : "relatedEntities",
+					"matchColumn" : "friendsCollection",
+					"scope" : "public",
+					"type" : "FriendCollection",
+					"reversePath" : true,
+					"path" : "player"
+				}
+			],
+			"methods" : 
+			[
+				{
+					"name" : "addWeight",
+					"applyTo" : "entity",
+					"scope" : "publicOnServer",
+					"from" : "$mainModel.Player.entityMethods.addWeight",
+					"userDefined" : true
+				},
+				{
+					"name" : "validatePassword",
+					"applyTo" : "entity",
+					"scope" : "publicOnServer",
+					"from" : "$mainModel.Player.entityMethods.validatePassword",
+					"userDefined" : true
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
+				}
+			]
+		},
+		{
+			"name" : "Point",
+			"className" : "Point",
+			"collectionName" : "PointCollection",
+			"scope" : "public",
+			"attributes" : 
+			[
+				{
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
+				},
+				{
+					"name" : "player",
+					"kind" : "relatedEntity",
+					"scope" : "public",
+					"type" : "Player",
+					"path" : "Player"
+				},
+				{
+					"name" : "weight",
+					"kind" : "relatedEntity",
+					"scope" : "public",
+					"type" : "Weight",
+					"path" : "Weight"
+				},
+				{
+					"name" : "description",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "points",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "number"
+				},
+				{
+					"name" : "date",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "date",
+					"simpleDate" : false
+				},
+				{
+					"name" : "achievment",
+					"kind" : "relatedEntity",
+					"scope" : "public",
+					"type" : "Achievment",
+					"path" : "Achievment"
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
+				}
+			]
+		},
+		{
+			"name" : "Weight",
+			"className" : "Weight",
+			"collectionName" : "WeightCollection",
+			"matchTable" : "Weights",
+			"scope" : "public",
+			"attributes" : 
+			[
+				{
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
+				},
+				{
+					"name" : "player",
+					"kind" : "relatedEntity",
+					"scope" : "public",
+					"type" : "Player",
+					"path" : "Player"
+				},
+				{
+					"name" : "weight",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "number"
+				},
+				{
+					"name" : "date",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "date",
+					"simpleDate" : false,
+					"events" : 
+					[
+						{
+							"kind" : "init",
+							"from" : "$mainModel.Weight.date.events.init",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "BMI",
+					"kind" : "calculated",
+					"matchColumn" : "IMC",
+					"scope" : "public",
+					"type" : "number",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "$mainModel.Weight.BMI.onGet",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "progress",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "number",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "$mainModel.Weight.progress.onGet",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "excuse",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "excuseVotes",
+					"kind" : "relatedEntities",
+					"matchColumn" : "excusePollCollection",
+					"scope" : "public",
+					"type" : "ExcuseVoteCollection",
+					"reversePath" : true,
+					"path" : "weight"
+				},
+				{
+					"name" : "excuseVerdict",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "bool",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "$mainModel.Weight.excuseVerdict.onGet",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "endOfExcuseVote",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "date",
+					"simpleDate" : false,
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "$mainModel.Weight.endOfExcuseVote.onGet",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "points",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "number",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "$mainModel.Weight.points.onGet",
+							"userDefined" : true
+						}
+					]
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
 				}
 			]
 		}

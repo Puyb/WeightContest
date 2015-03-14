@@ -7,8 +7,8 @@
 	z-index: 18;
 	width: auto;
 	height: 13px;
-	top: 466px;
-	left: 357px;
+	top: 457px;
+	left: 22px;
 	position: absolute;
 	min-width: 75px;
 }
@@ -17,8 +17,8 @@
 	z-index: 18;
 	width: 130px;
 	height: 22px;
-	top: 462px;
-	left: 437px;
+	top: 453px;
+	left: 102px;
 	position: absolute;
 }
 
@@ -26,8 +26,8 @@
 	z-index: 16;
 	width: auto;
 	height: 13px;
-	top: 428px;
-	left: 357px;
+	top: 419px;
+	left: 22px;
 	position: absolute;
 	min-width: 75px;
 }
@@ -36,8 +36,8 @@
 	z-index: 16;
 	width: 130px;
 	height: 22px;
-	top: 424px;
-	left: 437px;
+	top: 415px;
+	left: 102px;
 	position: absolute;
 }
 
@@ -45,8 +45,8 @@
 	z-index: 14;
 	width: auto;
 	height: 13px;
-	top: 392px;
-	left: 357px;
+	top: 383px;
+	left: 22px;
 	position: absolute;
 	min-width: 75px;
 }
@@ -55,8 +55,8 @@
 	z-index: 14;
 	width: 130px;
 	height: 22px;
-	top: 388px;
-	left: 437px;
+	top: 379px;
+	left: 102px;
 	position: absolute;
 }
 
@@ -64,8 +64,8 @@
 	z-index: 12;
 	width: auto;
 	height: 13px;
-	top: 356px;
-	left: 357px;
+	top: 347px;
+	left: 22px;
 	position: absolute;
 	min-width: 75px;
 }
@@ -74,17 +74,17 @@
 	z-index: 12;
 	width: 130px;
 	height: 22px;
-	top: 352px;
-	left: 437px;
+	top: 343px;
+	left: 102px;
 	position: absolute;
 }
 
 #label3 {
-	z-index: 9;
+	z-index: 8;
 	width: auto;
 	height: 13px;
-	top: 18px;
-	left: 814px;
+	top: 9px;
+	left: 479px;
 	position: absolute;
 }
 
@@ -92,17 +92,17 @@
 	z-index: 8;
 	width: 387px;
 	height: 300px;
-	top: 36px;
-	left: 814px;
+	top: 27px;
+	left: 479px;
 	position: absolute;
 }
 
 #label2 {
-	z-index: 6;
+	z-index: 5;
 	width: auto;
 	height: 13px;
-	top: 18px;
-	left: 350px;
+	top: 9px;
+	left: 15px;
 	position: absolute;
 }
 
@@ -110,26 +110,8 @@
 	z-index: 5;
 	width: 444px;
 	height: 300px;
-	top: 36px;
-	left: 350px;
-	position: absolute;
-}
-
-#label1 {
-	z-index: 3;
-	width: auto;
-	height: 13px;
-	top: 18px;
-	left: 31px;
-	position: absolute;
-}
-
-#dataGrid1 {
-	z-index: 2;
-	width: 300px;
-	height: 300px;
-	top: 36px;
-	left: 31px;
+	top: 27px;
+	left: 15px;
 	position: absolute;
 }
 

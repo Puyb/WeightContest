@@ -1,83 +1,25 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Main Page</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-		<meta name="generator" content="Wakanda GUIDesigner"/>
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-		<meta name="WAF.packageJson"/>
-		<meta name="WAF.catalog" content="Player,Weight"/>
-		<meta name="wakanda-version" content="Dev build 0.179641"/>
-		<meta name="wakanda-build" content="0.179641"/>
-		<meta name="WAF.config.loadCSS" id="waf-interface-css" content="styles/index.css"/>
-		<meta name="WAF.config.loadCSS" id="waf-project-css" content="/application.css"/>
-		<meta name="viewport" content="width=410"/>
-		
-		<meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="player.weights" data-lib="WAF" data-id="weights" data-dataType="string" data-autoLoad="true" content="weights" data-initialOrderBy="date"/>
-<meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="Player" data-lib="WAF" data-id="player" data-dataType="string" data-autoLoad="true" content="player"/>
-<meta name="WAF.config.loadJS" id="waf-script" content="scripts/index.js"/>
-</head>
-	<body id="waf-body" data-workspace-width="0" data-workspace-orientation="portrait" data-workspace-height="0" data-workspace-device="desktop" data-viewport-width="device-width" data-viewport-minimum-scale="1.0" data-viewport-maximum-scale="1.0" data-viewport-initial-scale="1.0" data-type="document" data-title="Main Page" data-theme="default" data-rpc-validation="false" data-rpc-namespace="rpc" data-rpc-activate="false" data-platform="desktop" data-lib="WAF" data-group="[['chart1','container2','richText1']]" data-entire-model="false" data-apple-meta-tags-status-bar="default" style="bottom:;right:;visibility:hidden;">
-		<div id="container1" data-type="Container" data-package="Container" class="waf-container-level-0 waf-level-0 well" style=" " data-constraint-left="true" data-constraint-top="true">
-			<select style=" " id="dropDown1" data-type="DropDown" data-selectitem="true" data-package="DropDown" data-label="Player" data-items-attributes="value=ID;label=name" data-items="player" data-constraint-top="true" data-constraint-left="true" class="">
-</select>
-<label id="label1" for="dropDown1" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label waf-label-dropdown">Player</label>
-			<div style="width: auto; height: auto; white-space: nowrap; box-sizing: border-box; " id="text5" data-value="[player.lastWeight]" data-type="Text" data-package="Text" data-format="###.0 kg" data-constraint-top="true" data-constraint-left="true" data-binding-value="player.lastWeight">[player.lastWeight]</div>
-			<div style="width: auto; height: auto; white-space: nowrap; box-sizing: border-box; " id="text6" data-value="[player.lastBMI]" data-type="Text" data-package="Text" data-label="BMI" data-constraint-top="true" data-constraint-left="false" data-binding-value="player.lastBMI" data-format="##.#" data-constraint-right="true">[player.lastBMI]</div>
-<label id="label2" for="text6" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="false" class="waf-widget waf-label waf-label-text" data-constraint-right="true">BMI</label>
-		<div style="width: auto; height: auto; white-space: nowrap; box-sizing: border-box; " id="text7" data-value="[player.points]" data-type="Text" data-package="Text" data-format="#,### pts" data-constraint-top="true" data-constraint-left="true" data-binding-value="player.points">[player.points]</div>
-      <div id="dataGrid1" data-type="FlotLine" data-package="FlotLine" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" data-data="weights" data-data-attributes="x=date;y=weight" class="waf-widget waf-flotLine">
-</div>
-<div style=" " id="waGage1" data-type="WaGage" data-title="Progress" data-package="WaGage" data-constraint-top="true" data-constraint-left="true" data-binding-value="player.lastProgress">
-<svg height="100%" version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg" style="overflow-x: hidden; overflow-y: hidden; position: relative; ">
-<desc>Created with Rapha�l 2.1.0</desc>
-<defs>
-<filter id="waGage1-inner-shadow">
-<feoffset dx="0" dy="3">
-</feoffset>
-<fegaussianblur result="offset-blur" stdDeviation="5">
-</fegaussianblur>
-<fecomposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse">
-</fecomposite>
-<feflood flood-color="black" flood-opacity="0.2" result="color">
-</feflood>
-<fecomposite operator="in" in="color" in2="inverse" result="shadow">
-</fecomposite>
-<fecomposite operator="over" in="shadow" in2="SourceGraphic">
-</fecomposite>
-</filter>
-</defs>
-<path style="" fill="#edebeb" stroke="none" d="M0,0L0,0A0,0,0,0,1,0,0L0,0A0,0,0,0,0,0,0Z" filter="url(#waGage1-inner-shadow)">
-</path>
-<path style="" fill="#c9d107" stroke="none" d="M0,0L0,0A0,0,0,0,1,0,0L0,0A0,0,0,0,0,0,0Z" filter="url(#waGage1-inner-shadow)">
-</path>
-<text style="text-anchor: middle; font: normal normal normal 10px/normal Arial; font-size: 10px; font-weight: bold; font-family: Arial; fill-opacity: 1; " x="0" y="0" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#999999" font-size="10px" font-weight="bold" font-family="Arial" fill-opacity="1">
-<tspan dy="0">Progress</tspan>
-</text>
-<text style="text-anchor: middle; font: normal normal normal 10px/normal Arial; font-size: 16px; font-weight: bold; font-family: Arial; fill-opacity: 1; " x="0" y="0" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#010101" font-size="16px" font-weight="bold" font-family="Arial" fill-opacity="1">
-<tspan dy="0">20</tspan>
-</text>
-<text style="text-anchor: middle; font: normal normal normal 10px/normal Arial; font-size: 10px; font-weight: normal; font-family: Arial; fill-opacity: 1; " x="0" y="14" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#b3b3b3" font-size="10px" font-weight="normal" font-family="Arial" fill-opacity="1">
-<tspan dy="14">%</tspan>
-</text>
-<text style="text-anchor: middle; font: normal normal normal 10px/normal Arial; font-size: 10px; font-weight: normal; font-family: Arial; fill-opacity: 1; " x="0" y="0" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#b3b3b3" font-size="10px" font-weight="normal" font-family="Arial" fill-opacity="1">
-<tspan dy="0">0</tspan>
-</text>
-<text style="text-anchor: middle; font: normal normal normal 10px/normal Arial; font-size: 10px; font-weight: normal; font-family: Arial; fill-opacity: 1; " x="0" y="0" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#b3b3b3" font-size="10px" font-weight="normal" font-family="Arial" fill-opacity="1">
-<tspan dy="0">100</tspan>
-</text>
-</svg>
-</div>
-<input type="text" tabindex="0" style=" " id="textInput1" data-type="TextInput" data-package="TextInput" data-label="My Weight" data-constraint-top="true" data-constraint-left="true" class="form-control"/>
-<button tabindex="0" style=" " id="button1" data-type="Button" data-package="Button" data-constraint-top="true" data-constraint-left="true" class="btn btn-default">
-<span class="btn-text">
-</span>
-<span class="btn-text">Submit</span>
-</button>
-<label id="label4" data-type="label" data-lib="WAF" for="textInput1" data-valign="middle" data-margin="5" class="waf-widget waf-label waf-label-textinput" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="false" data-constraint-right="false">My Weight</label>
-</div>
-	
-		<script type="text/javascript" src="/waLib/WAF/Loader.js">
-</script>
+<!DOCTYPE html><html>
+    
+    <head>
+        <title>Main Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="generator" content="Wakanda GUIDesigner"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <meta name="WAF.packageJson"/>
+        <meta name="WAF.catalog" content="Player,Weight"/>
+        <meta name="wakanda-version" content="Dev build 0.180935"/>
+        <meta name="wakanda-build" content="0.180935"/>
+        <meta name="WAF.config.loadCSS" id="waf-interface-css" content="styles/index.css"/>
+        <meta name="WAF.config.loadCSS" id="waf-project-css" content="/application.css"/>
+        <meta name="viewport" content="width=410"/>
+        <meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="player.weights" data-lib="WAF" data-initialOrderBy="date" data-id="weights" data-dataType="string" data-autoLoad="true" content="weights"/>
+        <meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="Player" data-lib="WAF" data-id="player" data-dataType="string" data-autoLoad="true" content="player"/>
+        <meta name="WAF.config.loadJS" id="waf-script" content="scripts/index.js"/>
+    </head>
+    
+    <body style="bottom:;right:;visibility:hidden;" id="waf-body" data-workspace-width="0" data-workspace-orientation="portrait" data-workspace-height="0" data-workspace-device="desktop" data-viewport-width="device-width" data-viewport-minimum-scale="1.0" data-viewport-maximum-scale="1.0" data-viewport-initial-scale="1.0" data-type="document" data-title="Main Page" data-theme="default" data-rpc-validation="false" data-rpc-namespace="rpc" data-rpc-activate="false" data-platform="desktop" data-lib="WAF" data-group="[]" data-entire-model="false" data-apple-meta-tags-status-bar="default">
+    	<div id="component1" data-type="component" data-lib="WAF" class="waf-widget waf-component" data-constraint-left="true" data-constraint-top="true" data-path="/start.waComponent"></div>
+		<script type="text/javascript" src="/waLib/WAF/Loader.js"></script>
 	</body>
+
 </html>
